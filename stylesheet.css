@@ -1,0 +1,42 @@
+#title {
+			text-align: center;
+		}
+
+		body {
+		        height: 200px;
+			    background: linear-gradient(to right, #ffff80, #99e699, #668cff); /* I was really bored so here's the background for now  */
+		}
+
+		#about {
+			border-style: groove;
+			border-width: 10px;
+			font-size: 25px;
+		}
+
+		#member {
+			border-style: groove;
+			border-width: 10px;
+			font-size: 25px;
+		}
+
+		#vote {
+			border-style: groove;
+			border-width: 10px;
+			font-size: 25px;
+		}
+
+		#rules {
+			border-style: groove;
+			border-width: 10px;
+			font-size: 25px;
+		}
+
+		#comehere {
+			font-size: 100px;
+		}
+
+		#clock {
+			position: relative;
+			left: 50px;
+			top: 50px;
+		}
