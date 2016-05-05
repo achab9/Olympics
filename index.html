@@ -18,19 +18,27 @@
 			</center>
 		
 		<center> <table> 
-			<td id = "about"> About Players</td> <!-- (About Page - both work on display, both work on finding information) -->
+			<td>
+			<button id = "about"> About Players</button> <!-- (About Page - both work on display, both work on finding information) -->
+			</td>
 			<td> </td>
 			<td> </td>
 			<td> </td>
-			<td id = "member"> Become a Member </td> <!-- (Members - AC creates databes, AS displays profile page) -->
+			<td>
+			<button id = "member"> Become a Member </button> <!-- (Members - AC creates databes, AS displays profile page) -->
+			</td>
 			<td> </td>
 			<td> </td>
 			<td> </td>
-			<td id = "vote"> Vote for Sports </td> <!-- (Graph - AC creates data set, AS displays chart) -->
+			<td>
+			<button id = "vote"> Vote for Sports </button> <!-- (Graph - AC creates data set, AS displays chart) -->
+			</td>
 			<td> </td>
 			<td> </td>
 			<td> </td>
-			<td id = "rules"> Rules of Sports </td> <!--  -->
+			<td>
+			<button id = "rules"> Rules of Sports </button> <!--  -->
+			</td>
 		</table>  </center>
 
 		<style> 
@@ -40,7 +48,8 @@
 		}
 
 		body {
-		    
+		        height: 200px;
+			    background: linear-gradient(to right, #ff8080, #ffbf80, #ffff80, #99e699, #668cff); /* Standard syntax (must be last) */
 		}
 
 		#about {
