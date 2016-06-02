@@ -11,44 +11,48 @@
 		<a href = "votenow.html"> </a>
 		<nav id = "vote" > </nav>
 
-		<script src = "Styling2.js" > </script>	
-
-		 <br>
-		<pre>
-Create Profile - <br> <br>
-	First Name:
-	<input type="text" id="firstname"><br>
-	Last Name:
-	<input type="text" id="lastname"> <br>
-	Username: 
-	<input type="text" id="username"> <br>
-	Password:
-	<input type="text" id="password">
-	
-
-		<button onclick = "join();"> Join! </button>
-		</pre>
-
-
-		 <br>
-		<pre>
-Log In - <br> <br>
-  	Username:
-  	<input type="text" id="users"> <br>
-  	Password:
-  	<input type="text" id="pass"> <br>
-  	
-  		<button onclick = "login();"> Log In! </button>
-		</pre>
+		<script src = "Styling2.js" > </script>
 
 	</head>
 
 	<body>	
 
+		<script src = "http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" ></script>
+
+		<form id = "myForm" action = " " method = "POST" target = "no-target">
+			<input id = "firstNameInput" placeholder = "First Name" name = "firstName"> <br> <br>
+			<input id = "lastNameInput" placeholder = "Last Name" name = "lastName"> <br> <br>
+			<input id = "usernameInput" placeholder = "Username" name = "username"> <br> <br>
+			<input id = "passwordInput" placeholder = "Password" name = "password"> <br> <br>
+			<button id = "formSubmit" type = "submit"> Join! </button>
+		</form> 
+
+		<iframe src'#' id = "no-target" name = "no-target" style = "visibility:hidden"></iframe>
+
 		<script>
+			$('#myForm').on('submit', function() {
 
+				var baseURL = "https://docs.google.com/forms/d/1Y7zjBLaxmO-BxmjD6eU0rB-NKLSm37IOoAxPXQ-Zpqo/formResponse?";
+				var submitRef = "&submit=Submit";
+				var theirFirstName = encodeURIComponent($("#firstNameInput").val());
+				var firstNameID = "entry_1208856848";
+				var theirLastName = encodeURIComponent($("#lastNameInput").val());
+				var lastNameID = "entry_1888367364";
+				var theirUsername = encodeURIComponent($("#usernameInput").val());
+				var usernameID = "entry_1499230911";
+				var theirPassword = encodeURIComponent($("#passwordInput").val());
+				var passwordID = "entry_1142592352";
 
+				var submitURL = (baseURL + firstNameID + "=" + theirFirstName + "&" + lastNameID + "=" + theirLastName + "&" + usernameID + "=" + theirUsername + "&" + passwordID + "=" + theirPassword + submitRef);
 
+				console.log(submitURL);
+				$(this)[0].action = submitURL;
+				$('#firstNameInput').addClass('active').val("Thank you!");
+				$('#lastNameInput').addClass('active').val("Thank you!");
+				$('#usernameInput').addClass('active').val("Thank you!");
+				$('#passwordInput').addClass('active').val("Thank you!");
+
+			});
 		</script>
 
 	</body>
