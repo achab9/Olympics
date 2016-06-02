@@ -26,89 +26,569 @@
 				<button onclick="myFunction()" class="dropbtn">Pick a Sport</button>
 				<div id="myDropdown" class="dropdown-content">
 					<a href="#" onclick = "volleyball();">Beach Volleyball</a>
-				    <a href="#">Road Cycling</a>
-				    <a href="#">Penthalon</a>
-				    <a href="#">Swimming</a>
-				    <a href="#">Tennis </a>
-				    <a href="#">Water Polo</a>
+				    <a href="#" onclick = "cycling();">Road Cycling</a>
+				    <a href="#" onclick = "running();">Penthalon</a>
+				    <a href="#" onclick = "swimming();">Diving</a>
+				    <a href="#" onclick = "tennis();">Tennis </a>
+				    <a href="#" onclick = "polo();">Water Polo</a>
 				</div>
 			</div>
 
 			<div id="div2" style="display:none;" class="answer_list">
-				<table style="width:50%" id = "volleyball">
-					<br>
-					<tr>
-						<td><strong> Men's Volleyball </strong> <br> </td>
-						<td> <td> <td> </td>
-						<td><strong> Women's Volleyball </strong> <br> </td>
-					</tr>
-					<tr>
-						<td>2012 - London, England</td>
-					    <td>Gold</td> 
-					    <td>Russian Federation</td>
-					    <td>
-					    <td>2012 - London, England</td>
-					    <td>Gold</td> 
-					    <td>Brazil</td>
-					</tr>
-					<tr>
-					    <td></td>
-					    <td>Silver</td> 
-					    <td>Brazil</td>
-					</tr>
-					<tr>
-					    <td></td>
-					    <td>Bronze</td> 
-					    <td>Italy</td> <br>
-					</tr>
-					
-					<tr>
-						<td>2008 - Bejing, China</td>
-					    <td>Gold</td> 
-					    <td>United States</td>
-					</tr>
-					<tr>
-					    <td></td>
-					    <td>Silver</td> 
-					    <td>Brazil</td>
-					</tr>
-					<tr>
-					    <td></td>
-					    <td>Bronze</td> 
-					    <td>Russia</td>
-					</tr>
+				<table>
+				  <tr>
+				    <th id = "year">Year / Place </th>
+				    <th colspan="2" id = "men">Men's Volleyball</th>
+				    <th colspan="2" id = "women">Women's Volleyball</th>
+				  </tr>
+				  <tr id = "Gold">
+				    <td>2012 - London, England</td>
+				    <td>Gold</td>
+				    <td> Russian Federation </td>
+				    <td> Gold </td>
+				    <td> Brazil </td>
+				  </tr>
+				  <tr id = "Silver">
+				    <td> </td>
+				    <td> Silver </td>
+				    <td> Brazil </td>
+				    <td> Silver </td>
+				    <td> United States </td>
+				  </tr>
+				  <tr id = "Bronze">
+				    <td> </td>
+				    <td> Bronze </td>
+				    <td> Italy </td>
+				    <td> Bronze </td>
+				    <td> Japan </td>
+				  </tr>
+				  <tr id = "Gold">
+				    <td>2008 - Bejing, China</td>
+				    <td> Gold </td>
+				    <td> United States </td>
+				    <td> Gold </td>
+				    <td> Brazil</td>
+				  </tr>
+				  <tr id = "Silver">
+				    <td> </td>
+				    <td> Silver </td>
+				    <td> Brazil </td>
+				    <td> Silver </td>
+				    <td> United States </td>
+				  </tr>
+				  <tr id = "Bronze">
+				    <td> </td>
+				    <td> Bronze </td>
+				    <td> Russia </td>
+				    <td> Bronze </td>
+				    <td> China</td>
+				  <tr id = "Gold">
+				    <td> 2004 - Athens, Greece </td>
+				    <td> Gold </td>
+				    <td> Brazil</td>
+				    <td> Gold </td>
+				    <td> China</td>
+				  </tr>
+				  <tr id = "Silver">
+				  	<td> </td>
+				  	<td> Silver </td>
+				  	<td> Italy</td>
+				  	<td> Silver </td>
+				  	<td> Russia</td>
+				  </tr>
+				  <tr id = "Bronze"> 
+				  	<td> </td>
+				  	<td> Bronze </td>
+				  	<td> Russia</td>
+				  	<td> Bronze </td>
+				  	<td> Cuba</td>
+				  </tr>
+				  <tr id = "Gold">
+				    <td> 2000 - Sydney, Australia </td>
+				    <td> Gold </td>
+				    <td> Yugoslavia</td>
+				    <td> Gold </td>
+				    <td> Cuba</td>
+				  </tr>
+				  <tr id = "Silver"> 
+				  	<td> </td>
+				  	<td> Silver </td>
+				  	<td> Russia</td>
+				  	<td> Silver </td>
+				  	<td> Russia</td>
+				  </tr>
+				  <tr id = "Bronze">
+				  	<td> </td>
+				  	<td> Bronze </td>
+				  	<td> Italy</td>
+				  	<td> Bronze </td>
+				  	<td> Brazil</td>
+				  </tr>
+				</table>
+		 	</div>
 
-					<tr>
-						<td>2004 - Athens, Greece</td>
-					    <td>Gold</td> 
-					    <td>Brazil</td>
-					</tr>
-					<tr>
-					    <td></td>
-					    <td>Silver</td> 
-					    <td>Italy</td>
-					</tr>
-					<tr>
-					    <td></td>
-					    <td>Bronze</td> 
-					    <td>Russia</td>
-					</tr>
+		 	<div id="div3" style="display:none;" class="answer_list">
+				<table>
+				  <tr>
+				    <th id = "year">Year / Place </th>
+				    <th colspan="2" id = "men">Men's Road Cycling</th>
+				    <th colspan="2" id = "women">Women's Road Cycling</th>
+				  </tr>
+				  <tr id = "Gold">
+				    <td>2012 - London, England</td>
+				    <td>Gold</td>
+				    <td> Kazakhstan</td>
+				    <td> Gold </td>
+				    <td> Netherlands </td>
+				  </tr>
+				  <tr id = "Silver">
+				    <td> </td>
+				    <td> Silver </td>
+				    <td> Columbia </td>
+				    <td> Silver </td>
+				    <td> Great Britain </td>
+				  </tr>
+				  <tr id = "Bronze">
+				    <td> </td>
+				    <td> Bronze </td>
+				    <td> Norway </td>
+				    <td> Bronze </td>
+				    <td> Russia </td>
+				  </tr>
+				  <tr id = "Gold">
+				    <td>2008 - Bejing, China</td>
+				    <td> Gold </td>
+				    <td> Spain </td>
+				    <td> Gold </td>
+				    <td> Great Britain </td>
+				  </tr>
+				  <tr id = "Silver">
+				    <td> </td>
+				    <td> Silver </td>
+				    <td> Switzerland </td>
+				    <td> Silver </td>
+				    <td> Sweeden </td>
+				  </tr>
+				  <tr id = "Bronze">
+				    <td> </td>
+				    <td> Bronze </td>
+				    <td> Russia </td>
+				    <td> Bronze </td>
+				    <td> Italy </td>
+				  </tr>
+				  <tr id = "Gold">
+				    <td> 2004 - Athens, Greece </td>
+				    <td> Gold </td>
+				    <td> Italy </td>
+				    <td> Gold </td>
+				    <td> Australia </td>
+				  </tr>
+				  <tr id = "Silver">
+				  	<td> </td>
+				  	<td> Silver </td>
+				  	<td> Portugal </td>
+				  	<td> Silver </td>
+				  	<td> Germany </td>
+				  <tr id = "Bronze"> 
+				  	<td> </td>
+				  	<td> Bronze </td>
+				  	<td> Belgium </td>
+				  	<td> Bronze </td>
+				  	<td> Russia </td>
+				  </tr>
+				  <tr id = "Gold">
+				    <td> 2000 - Sydney, Australia </td>
+				    <td> Gold </td>
+				    <td> Germany </td>
+				    <td> Gold </td>
+				    <td> Netherlands </td>
+				  </tr>
+				  <tr id = "Silver"> 
+				  	<td> </td>
+				  	<td> Silver </td>
+				  	<td> Kazakhstan </td>
+				  	<td> Silver </td>
+				  	<td> Germany </td>
+				  </tr>
+				  <tr id = "Bronze">
+				  	<td> </td>
+				  	<td> Bronze </td>
+				  	<td> Germany </td>
+				  	<td> Bronze </td>
+				  	<td> Lithuania </td>
+				  </tr>
+				</table>
+		 	</div>
 
-					<tr>
-						<td>2000 - Sydney, Australia</td>
-					    <td>Gold</td> 
-					    <td>Yugoslavia</td>
-					</tr>
-					<tr>
-					    <td></td>
-					    <td>Silver</td> 
-					    <td>Russia</td>
-					</tr>
-					<tr>
-					    <td></td>
-					    <td>Bronze</td> 
-					    <td>Italy</td>
-					</tr>
+		 	<div id="div4" style="display:none;" class="answer_list">
+				<table>
+				  <tr>
+				    <th id = "year">Year / Place </th>
+				    <th colspan="2" id = "men">Men's Pentathalon</th>
+				    <th colspan="2" id = "women">Women's Pentathalon</th>
+				  </tr>
+				  <tr id = "Gold">
+				    <td>2012 - London, England</td>
+				    <td>Gold</td>
+				    <td> Czech Republic</td>
+				    <td> Gold </td>
+				    <td> Lithuania </td>
+				  </tr>
+				  <tr id = "Silver">
+				    <td> </td>
+				    <td> Silver </td>
+				    <td> China </td>
+				    <td> Silver </td>
+				    <td> Great Britain </td>
+				  </tr>
+				  <tr id = "Bronze">
+				    <td> </td>
+				    <td> Bronze </td>
+				    <td> Hungary </td>
+				    <td> Bronze </td>
+				    <td> Brazil </td>
+				  </tr>
+				  <tr id = "Gold">
+				    <td>2008 - Bejing, China</td>
+				    <td> Gold </td>
+				    <td> Russia </td>
+				    <td> Gold </td>
+				    <td> Germany </td>
+				  </tr>
+				  <tr id = "Silver">
+				    <td> </td>
+				    <td> Silver </td>
+				    <td> Lithuania </td>
+				    <td> Silver </td>
+				    <td> Great Britain </td>
+				  </tr>
+				  <tr id = "Bronze">
+				    <td> </td>
+				    <td> Bronze </td>
+				    <td> Lithuania </td>
+				    <td> Bronze </td>
+				    <td> Ukraine </td>
+				  </tr>
+				  <tr id = "Gold">
+				    <td> 2004 - Athens, Greece </td>
+				    <td> Gold </td>
+				    <td> Russia </td>
+				    <td> Gold </td>
+				    <td> Hungary </td>
+				  </tr>
+				  <tr id = "Silver">
+				  	<td> </td>
+				  	<td> Silver </td>
+				  	<td> Lithuania </td>
+				  	<td> Silver </td>
+				  	<td> Latvia </td>
+				  <tr id = "Bronze"> 
+				  	<td> </td>
+				  	<td> Bronze </td>
+				  	<td> Czech Republic</td>
+				  	<td> Bronze </td>
+				  	<td> Great Britain </td>
+				  </tr>
+				  <tr id = "Gold">
+				    <td> 2000 - Sydney, Australia </td>
+				    <td> Gold </td>
+				    <td> Russia </td>
+				    <td> Gold </td>
+				    <td> Great Britain </td>
+				  </tr>
+				  <tr id = "Silver"> 
+				  	<td> </td>
+				  	<td> Silver </td>
+				  	<td> Hungary </td>
+				  	<td> Silver </td>
+				  	<td> United States </td>
+				  </tr>
+				  <tr id = "Bronze">
+				  	<td> </td>
+				  	<td> Bronze </td>
+				  	<td> Belarus </td>
+				  	<td> Bronze </td>
+				  	<td> Great Britain</td>
+				  </tr>
+				</table>
+		 	</div>
+
+		 	<div id="div5" style="display:none;" class="answer_list">
+				<table>
+				  <tr>
+				    <th id = "year">Year / Place </th>
+				    <th colspan="2" id = "men">Men's Diving</th>
+				    <th colspan="2" id = "women">Women's Diving</th>
+				  </tr>
+				  <tr id = "Gold">
+				    <td>2012 - London, England</td>
+				    <td>Gold</td>
+				    <td> United States </td>
+				    <td> Gold </td>
+				    <td> Russia  </td>
+				  </tr>
+				  <tr id = "Silver">
+				    <td> </td>
+				    <td> Silver </td>
+				    <td> China </td>
+				    <td> Silver </td>
+				    <td> China </td>
+				  </tr>
+				  <tr id = "Bronze">
+				    <td> </td>
+				    <td> Bronze </td>
+				    <td> Great Britain </td>
+				    <td> Bronze </td>
+				    <td> China </td>
+				  </tr>
+				  <tr id = "Gold">
+				    <td>2008 - Bejing, China</td>
+				    <td> Gold </td>
+				    <td> Australia  </td>
+				    <td> Gold </td>
+				    <td> China </td>
+				  </tr>
+				  <tr id = "Silver">
+				    <td> </td>
+				    <td> Silver </td>
+				    <td> China </td>
+				    <td> Silver </td>
+				    <td> Canada </td>
+				  </tr>
+				  <tr id = "Bronze">
+				    <td> </td>
+				    <td> Bronze </td>
+				    <td> Russia </td>
+				    <td> Bronze </td>
+				    <td> China </td>
+				  </tr>
+				  <tr id = "Gold">
+				    <td> 2004 - Athens, Greece </td>
+				    <td> Gold </td>
+				    <td> China </td>
+				    <td> Gold </td>
+				    <td> China </td>
+				  </tr>
+				  <tr id = "Silver">
+				  	<td> </td>
+				  	<td> Silver </td>
+				  	<td> Australia </td>
+				  	<td> Silver </td>
+				  	<td> Canada </td>
+				  <tr id = "Bronze"> 
+				  	<td> </td>
+				  	<td> Bronze </td>
+				  	<td> China </td>
+				  	<td> Bronze </td>
+				  	<td> Russia </td>
+				  </tr>
+				  <tr id = "Gold">
+				    <td> 2000 - Sydney, Australia </td>
+				    <td> Gold </td>
+				    <td> China </td>
+				    <td> Gold </td>
+				    <td> China </td>
+				  </tr>
+				  <tr id = "Silver"> 
+				  	<td> </td>
+				  	<td> Silver </td>
+				  	<td> China </td>
+				  	<td> Silver </td>
+				  	<td> Mexico </td>
+				  </tr>
+				  <tr id = "Bronze">
+				  	<td> </td>
+				  	<td> Bronze </td>
+				  	<td> Russia</td>
+				  	<td> Bronze </td>
+				  	<td> Russia </td>
+				  </tr>
+				</table>
+		 	</div>
+
+		 	<div id="div6" style="display:none;" class="answer_list">
+				<table>
+				  <tr>
+				    <th id = "year">Year / Place </th>
+				    <th colspan="2" id = "men">Men's Tennis</th>
+				    <th colspan="2" id = "women">Women's Tennis</th>
+				  </tr>
+				  <tr id = "Gold">
+				    <td>2012 - London, England</td>
+				    <td> Gold</td>
+				    <td> Great Britain</td>
+				    <td> Gold </td>
+				    <td> United States </td>
+				  </tr>
+				  <tr id = "Silver">
+				    <td> </td>
+				    <td> Silver </td>
+				    <td> Switzerland </td>
+				    <td> Silver </td>
+				    <td> Russia </td>
+				  </tr>
+				  <tr id = "Bronze">
+				    <td> </td>
+				    <td> Bronze </td>
+				    <td> Argentina </td>
+				    <td> Bronze </td>
+				    <td> Belarus </td>
+				  </tr>
+				  <tr id = "Gold">
+				    <td>2008 - Bejing, China</td>
+				    <td> Gold </td>
+				    <td> Spain </td>
+				    <td> Gold </td>
+				    <td> Russia </td>
+				  </tr>
+				  <tr id = "Silver">
+				    <td> </td>
+				    <td> Silver </td>
+				    <td> Chile </td>
+				    <td> Silver </td>
+				    <td> Russia </td>
+				  </tr>
+				  <tr id = "Bronze">
+				    <td> </td>
+				    <td> Bronze </td>
+				    <td> Serbia </td>
+				    <td> Bronze </td>
+				    <td> Russia </td>
+				  </tr>
+				  <tr id = "Gold">
+				    <td> 2004 - Athens, Greece </td>
+				    <td> Gold </td>
+				    <td> Chile </td>
+				    <td> Gold </td>
+				    <td> Belgium </td>
+				  </tr>
+				  <tr id = "Silver">
+				  	<td> </td>
+				  	<td> Silver </td>
+				  	<td> United States </td>
+				  	<td> Silver </td>
+				  	<td> France </td>
+				  <tr id = "Bronze"> 
+				  	<td> </td>
+				  	<td> Bronze </td>
+				  	<td> Chile </td>
+				  	<td> Bronze </td>
+				  	<td> Australia </td>
+				  </tr>
+				  <tr id = "Gold">
+				    <td> 2000 - Sydney, Australia </td>
+				    <td> Gold </td>
+				    <td> Russia </td>
+				    <td> Gold </td>
+				    <td> United States </td>
+				  </tr>
+				  <tr id = "Silver"> 
+				  	<td> </td>
+				  	<td> Silver </td>
+				  	<td> Germany </td>
+				  	<td> Silver </td>
+				  	<td> Russia </td>
+				  </tr>
+				  <tr id = "Bronze">
+				  	<td> </td>
+				  	<td> Bronze </td>
+				  	<td> France </td>
+				  	<td> Bronze </td>
+				  	<td> United States </td>
+				  </tr>
+				</table>
+		 	</div>
+
+		 	<div id="div7" style="display:none;" class="answer_list">
+				<table>
+				  <tr>
+				    <th id = "year">Year / Place </th>
+				    <th colspan="2" id = "men">Men's Water Polo</th>
+				    <th colspan="2" id = "women">Women's Water Polo</th>
+				  </tr>
+				  <tr id = "Gold">
+				    <td>2012 - London, England</td>
+				    <td>Gold</td>
+				    <td> Croatia </td>
+				    <td> Gold </td>
+				    <td> United States </td>
+				  </tr>
+				  <tr id = "Silver">
+				    <td> </td>
+				    <td> Silver </td>
+				    <td> Italy </td>
+				    <td> Silver </td>
+				    <td> Spain </td>
+				  </tr>
+				  <tr id = "Bronze">
+				    <td> </td>
+				    <td> Bronze </td>
+				    <td> Serbia </td>
+				    <td> Bronze </td>
+				    <td> Australia </td>
+				  </tr>
+				  <tr id = "Gold">
+				    <td>2008 - Bejing, China</td>
+				    <td> Gold </td>
+				    <td> Hungary </td>
+				    <td> Gold </td>
+				    <td> Netherlands </td>
+				  </tr>
+				  <tr id = "Silver">
+				    <td> </td>
+				    <td> Silver </td>
+				    <td> United States </td>
+				    <td> Silver </td>
+				    <td> United States</td>
+				  </tr>
+				  <tr id = "Bronze">
+				    <td> </td>
+				    <td> Bronze </td>
+				    <td> Serbia </td>
+				    <td> Bronze </td>
+				    <td> Australia</td>
+				  </tr>
+				  <tr id = "Gold">
+				    <td> 2004 - Athens, Greece </td>
+				    <td> Gold </td>
+				    <td> Hungary </td>
+				    <td> Gold </td>
+				    <td> Italy </td>
+				  </tr>
+				  <tr id = "Silver">
+				  	<td> </td>
+				  	<td> Silver </td>
+				  	<td> Serbia </td>
+				  	<td> Silver </td>
+				  	<td> Greece</td>
+				  <tr id = "Bronze"> 
+				  	<td> </td>
+				  	<td> Bronze </td>
+				  	<td> Russia </td>
+				  	<td> Bronze </td>
+				  	<td> United States </td>
+				  </tr>
+				  <tr id = "Gold">
+				    <td> 2000 - Sydney, Australia </td>
+				    <td> Gold </td>
+				    <td> Hungary </td>
+				    <td> Gold </td>
+				    <td> Australia </td>
+				  </tr>
+				  <tr id = "Silver"> 
+				  	<td> </td>
+				  	<td> Silver </td>
+				  	<td> Russia </td>
+				  	<td> Silver </td>
+				  	<td> United States </td>
+				  </tr>
+				  <tr id = "Bronze">
+				  	<td> </td>
+				  	<td> Bronze </td>
+				  	<td> Yugoslavia</td>
+				  	<td> Bronze </td>
+				  	<td> Russia </td>
+				  </tr>
 				</table>
 		 	</div>
 
@@ -134,7 +614,56 @@
 
 			function volleyball() {
 			   document.getElementById('div2').style.display = "block";
-			   console.log("hehe");
+			   document.getElementById('div3').style.display = "none";
+			   document.getElementById('div4').style.display = "none";
+			   document.getElementById('div5').style.display = "none";
+			   document.getElementById('div6').style.display = "none";
+			   document.getElementById('div7').style.display = "none";
+			}
+
+			function cycling() {
+				document.getElementById('div2').style.display = "none";
+				document.getElementById('div3').style.display = "block";
+				document.getElementById('div4').style.display = "none";
+				document.getElementById('div5').style.display = "none";
+				document.getElementById('div6').style.display = "none";
+				document.getElementById('div7').style.display = "none";
+			}
+
+			function running() {
+				document.getElementById('div2').style.display = "none";
+				document.getElementById('div3').style.display = "none";
+				document.getElementById('div4').style.display = "block";
+				document.getElementById('div5').style.display = "none";
+				document.getElementById('div6').style.display = "none";
+				document.getElementById('div7').style.display = "none";
+			}
+
+			function swimming() {
+				document.getElementById('div2').style.display = "none";
+				document.getElementById('div3').style.display = "none";
+				document.getElementById('div4').style.display = "none";
+				document.getElementById('div5').style.display = "block";
+				document.getElementById('div6').style.display = "none";
+				document.getElementById('div7').style.display = "none";
+			}
+
+			function tennis() {
+				document.getElementById('div2').style.display = "none";
+				document.getElementById('div3').style.display = "none";
+				document.getElementById('div4').style.display = "none";
+				document.getElementById('div5').style.display = "none";
+				document.getElementById('div6').style.display = "block";
+				document.getElementById('div7').style.display = "none";
+			}
+
+			function polo() {
+				document.getElementById('div2').style.display = "none";
+				document.getElementById('div3').style.display = "none";
+				document.getElementById('div4').style.display = "none";
+				document.getElementById('div5').style.display = "none";
+				document.getElementById('div6').style.display = "none";
+				document.getElementById('div7').style.display = "block";
 			}
 
 		</script>
@@ -180,8 +709,58 @@
 			.show {display:block;}
 
 			#volleyball {
-			    border-collapse: collapse;
+			    border-collapse: separate;
 			    width: 100%;
+			}
+
+			table, td, th{
+			    border: 1px solid black;
+			    border-collapse: separate;
+			}
+			table{
+				width: 100%;
+				table-layout: fixed;
+				background-color: white;
+			}
+			th {
+			    height: 50px;
+			}
+
+			td{
+				padding: 10px;
+			    text-align: left;
+			}
+
+			tr {
+				width: 100%;
+			}
+
+			#Gold:hover {
+				background-color: #F0C457;
+			}
+
+			#Silver:hover {
+				background-color: #DDDDDE;
+			}
+
+			#Bronze:hover {
+				background-color: #F0A24F;
+			}
+
+			body {
+				background-image: url("http://static1.squarespace.com/static/52b2b777e4b0d1c471e86d9d/52cd3c17e4b014bd4f21c024/54c2a0f9e4b039d95904f9e9/1422041815023/?format=750w");
+			}
+
+			#year {
+				background: linear-gradient(to right, red , yellow);
+			}
+
+			#men {
+				background: linear-gradient(to right, yellow , green);
+			}
+
+			#women {
+				background: linear-gradient(to right, green , blue, black);
 			}
 		
 	</body>
