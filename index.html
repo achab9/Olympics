@@ -2,11 +2,6 @@
 <html>
 	<head>
 
-
-	</head>
-
-	<body>
-
 		<a href = "index.html"> </a>
 		<nav id = "home"> </nav>
 
@@ -16,11 +11,160 @@
 		<a href = "votenow.html"> </a>
 		<nav id = "vote" > </nav>
 
-		<script src = "Styling2.js" > </script>	
+		<script src = "Styling2.js" > </script>
 
-		<p id = "comehere"> Your homepage for the upcoming olympics! </p>
+	</head>
 
-		<iframe id = "clock" src="http://free.timeanddate.com/countdown/i56mp7qj/n213/cf12/cm0/cu4/ct0/cs1/ca0/cr0/ss0/cac000/cpc000/pcfff/tc66c/fn2/fs150/szw448/szh189/tatTime%20until%20Olympics%20in%20Rio/tac000/tptTime%20since%20Event%20started%20in/tpc000/macfff/mpc000/iso2016-08-05T00:00:00/pa20" allowTransparency="true" frameborder="0" width="425" height="174"></iframe> 
+	<body>	
+
+		<script src = "http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" ></script>
+
+		<form id = "myForm" action = " " method = "POST" target = "no-target">
+			<input id = "firstNameInput" placeholder = "First Name" name = "firstName"> <br> <br>
+			<input id = "lastNameInput" placeholder = "Last Name" name = "lastName"> <br> <br>
+			<input id = "usernameInput" placeholder = "Username" name = "username"> <br> <br>
+			<input id = "passwordInput" placeholder = "Password" name = "password"> <br> <br>
+			<button id = "formSubmit" type = "submit"> Join! </button>
+		</form> 
+
+		<iframe src'#' id = "no-target" name = "no-target" style = "visibility:hidden"></iframe>
+
+		<script>
+			$('#myForm').on('submit', function() {
+
+				var baseURL = "https://docs.google.com/forms/d/1Y7zjBLaxmO-BxmjD6eU0rB-NKLSm37IOoAxPXQ-Zpqo/formResponse?";
+				var submitRef = "&submit=Submit";
+				var theirFirstName = encodeURIComponent($("#firstNameInput").val());
+				var firstNameID = "entry_1208856848";
+				var theirLastName = encodeURIComponent($("#lastNameInput").val());
+				var lastNameID = "entry_1888367364";
+				var theirUsername = encodeURIComponent($("#usernameInput").val());
+				var usernameID = "entry_1499230911";
+				var theirPassword = encodeURIComponent($("#passwordInput").val());
+				var passwordID = "entry_1142592352";
+
+				var submitURL = (baseURL + firstNameID + "=" + theirFirstName + "&" + lastNameID + "=" + theirLastName + "&" + usernameID + "=" + theirUsername + "&" + passwordID + "=" + theirPassword + submitRef);
+
+				console.log(submitURL);
+				$(this)[0].action = submitURL;
+				$('#firstNameInput').addClass('active').val("Thank you!");
+				$('#lastNameInput').addClass('active').val("Thank you!");
+				$('#usernameInput').addClass('active').val("Thank you!");
+				$('#passwordInput').addClass('active').val("Thank you!");
+
+			});
+		</script>
+
+		<script src = "http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+		<form id = "myForm2" action = "" method = "POST" target = "no-target">
+			<input id = "loginUsernameInput" placeholder = "Username:" name = "loginUsername"> <br> <br>
+			<input id = "loginPasswordInput" placeholder = "Password: " name = "loginPassword"> <br> <br>
+			<button id = "loginSubmit" type = "submit"> Log In! </button>
+		</form>
+
+		<iframe src = "#" id = "no-target" name = "no-target" style = "visibility:hidden"></iframe>
+
+		<script>
+			$('#myForm2').on('submit',function(){
+
+				var baseURL2 = "https://docs.google.com/forms/d/1gsMhyZYVoy9w2boNg8hur4kWsEKuUEBxOgLeC-W2z8A/formResponse?";
+				var submitRef2 = "&submit=Submit";
+				var their_username_login = encodeURIComponent($("#loginUsernameInput").val());
+				var usernameLoginID = "entry_1934514565";
+				var their_password_login = encodeURIComponent($("#loginPasswordInput").val());
+				var passwordLoginID = "entry_865659571";
+
+				var submitURL2 = (baseURL2 + usernameLoginID + "=" + their_username_login + "&" + passwordLoginID + "=" + their_password_login + submitRef2);
+
+			console.log(submitURL2);
+			$(this)[0].action=submitURL2;
+			$('#loginUsernameInput').addClass('active').val("Thank you!");
+			$('#loginPasswordInput').addClass('active').val("Thank you!");
+
+			});
+		</script>
+
+		<script src = "http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+			<form id = "myForm3" action = "" method = "POST" target = "no-target">
+
+				<select id = "dropdown"> Vote for you Country!
+					<option value> </option>
+					<option value = "Argentina" id = "ARG"> Argentina </option>
+					<option value = "Australia" id = "AUS"> Australia </option>
+					<option value = "Belgium" id = "BEL"> Belgium </option>
+					<option value = "Brazil" id = "BRA"> Brazil </option>
+					<option value = "Canada" id = "CAN"> Canada </option>
+					<option value = "China" id = "CHN"> China </option>
+					<option value = "Denmark" id = "DEN"> Denmark </option>
+					<option value = "Dominican_Republic" id = "DOM"> Dominican Republic </option>
+					<option value = "Egypt" id = "EGY"> Egypt </option>
+					<option value = "Estonia" id = "EST"> Estonia </option>
+					<option value = "Finland" id = "FIN"> Finland </option>
+					<option value = "France" id = "FRA"> France </option>
+					<option value = "Germany" id = "GER"> Germany </option>
+					<option value = "Great_Birtain" id = "GBR"> Great Britian </option>
+					<option value = "Greece" id = "GRE"> Greece </option>
+					<option value = "Haiti" id = "HAI"> Haiti </option>
+					<option value = "Ireland" id = "IRE"> Ireland </option>
+					<option value = "Italy" id = "ITA"> Italy </option>
+					<option value = "Jamaica" id = "JAM"> Jamaica </option>
+					<option value = "Japan" id = "JPN"> Japan </option>
+					<option value = "Kazahstan" id = "KAZ"> Kazahstan </option>
+					<option value = "Korea" id = "KOR"> Korea </option>
+					<option value = "Latvia" id = "LAT"> Latvia </option>
+					<option value = "Lithuania" id = "LTU"> Lithuania </option>
+					<option value = "Mexico" id = "MEX"> Mexico </option>
+					<option value = "Morocco" id = "MOR"> Morocco </option>
+					<option value = "Netherlands" id = "NED"> Netherlands </option>
+					<option value = "Nicaragua" id = "NCA"> Nicaragua </option>
+					<option value = "Norway" id = "NOR"> Norway </option>
+					<option value = "Oman" id = "OMA"> Oman </option>
+					<option value = "Philipines" id = "PHI"> Philipines </option>
+					<option value = "Poland" id = "POL"> Poland </option>
+					<option value = "Puerto_Rico" id = "PUR"> Puerto Rico </option>
+					<option value = "Quatar" id = "QAT"> Quatar </option>
+					<option value = "Romania" id = "ROU"> Romania </option>
+					<option value = "Russia" id = "RUS"> Russia </option>
+					<option value = "Spain" id = "SPA"> Spain </option>
+					<option value = "Switzerland" id = "SWZ"> Switzerland </option>
+					<option value = "Tanzania" id = "TAN"> Tanzania </option>
+					<option value = "Turkey" id = "TUR"> Turkey </option>
+					<option value = "Uganda" id = "UGA"> Uganda </option>
+					<option value = "United_States" id = "USA"> United States </option>
+					<option value = "Venezuela" id = "VEN"> Venezuela </option>
+					<option value = "Vietnam" id = "VIE"> Vietnam </option>
+					<option value = "Yamen" id = "YEM"> Yamen </option>
+					<option value = "Yugoslavia" id = "YUG"> Yugoslavia </option>
+					<option value = "Zambia" id = "ZAM"> Zambia </option>
+					<option value = "Zimbabwe" id = "ZIM"> Zimbabwe </option>
+				</select>
+
+				<button id = "endButton" type="submit" value="submit"> Vote! </button>
+				
+			</form>
+
+			<iframe src = "#" id = "no-target" name = "no-target" style = "visibility:hidden"></iframe>
+
+			<script>
+
+				$('#myForm3').on('submit',function(){
+
+					var baseURL3 = "https://docs.google.com/forms/d/1ARjftkj3pYxHlEr73MbT3ll2GobmUspEhVd8rKXIsbY/formResponse?";
+					var submitRef3 = "&submit=Submit";
+					var Dropdown = encodeURIComponent($("#dropdown").val());
+					var DropdownID = "entry_1167550619";
+
+					var submitURL3 = (baseURL3 + DropdownID + "=" + Dropdown + submitRef3);
+
+					console.log(submitURL3);
+					$(this)[0].action=submitURL3;
+
+				});
+			
+
+		</script>
 
 		<style>
 
@@ -29,7 +173,6 @@
 			}
 
 		</style>
-		
 
 	</body>
 </html>
