@@ -5,6 +5,7 @@ document.getElementById("nav01").innerHTML =
 document.getElementById("vote").inneerHTML = 
 
 	"<button><a href = 'votenow.html'> Vote </a> </button> <br>";
+
 	
 
 document.getElementById("home").innerHTML = 
