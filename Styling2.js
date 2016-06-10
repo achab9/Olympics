@@ -11,6 +11,7 @@ document.getElementById("vote").inneerHTML =
 document.getElementById("home").innerHTML = 
 
 	"<button><a href = 'index.html'> Home </a> </button> <br>";
+	
 
 
 
