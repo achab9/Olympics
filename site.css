@@ -1,0 +1,132 @@
+#body {
+    background-image: url("http://commonwealthmagazine.org/wp-content/uploads/sites/2/2015/02/olympic-rings-on-white.jpg"); 
+    background-repeat:repeat-x;
+    background-size: 10%;
+}           
+
+#comehere {
+    text-align: center;
+    font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+    font-size: 49px;
+    font-style: normal;
+    font-variant: small-caps;
+    font-weight: bold;
+    line-height: 53.9px;
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+
+#volleyball {
+    border-collapse: separate;
+    width: 100%;
+}
+
+table, td, th{
+    border: 1px solid black;
+    border-collapse: separate;
+}
+table{
+    width: 100%;
+    table-layout: fixed;
+    background-color: white;
+}
+th {
+    height: 50px;
+}
+
+td{
+    padding: 10px;
+    text-align: left;
+}
+
+tr {
+    width: 100%;
+}
+
+#Gold:hover {
+    background-color: #F0C457;
+}
+
+#Silver:hover {
+    background-color: #DDDDDE;
+}
+
+#Bronze:hover {
+    background-color: #F0A24F;
+}
+
+#year {
+    background: linear-gradient(to right, red , yellow);
+}
+
+#men {
+    background: linear-gradient(to right, yellow , green);
+}
+
+#women {
+    background: linear-gradient(to right, green , blue, black);
+}
+
+ul#menu {
+    padding: 0;
+    margin-bottom: 11px;
+    padding-top: 100px;
+}
+
+ul#menu li {
+    display: inline;
+    margin-right: 3px;
+    border-color: black;
+}
+
+ul#menu li a {
+    background-color: #0085C8;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #696969;
+    border-radius: 4px 4px 0 0;
+    border-color: black;
+    border-style: solid;
+    font-color: white;
+    border-width: 1px;
+}
+
+ul#menu li a:hover {
+    color: white;
+    background-color: #F3C301;
+}
