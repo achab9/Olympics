@@ -1,17 +1,6 @@
-document.getElementById("nav01").innerHTML = 
-
-		"<button><a href = 'AboutPlayers.html'> History </a> </button> <br>";
-
-document.getElementById("vote").inneerHTML = 
-
-	"<button><a href = 'votenow.html'> Vote </a> </button> <br>";
-
-	
-
-document.getElementById("home").innerHTML = 
-
-	"<button><a href = 'index.html'> Home </a> </button> <br>";
-	
-
-
-
+document.getElementById("nav01").innerHTML =
+"<ul id='menu'>" + 
+"<li> <a href='index.html'> Home </a> </li>" + 
+"<li> <a href='AboutPlayers.html'> History </a> </li>" + 
+"<li> <a href='votenow.html'> Vote </a> </li>" + 
+"</ul>";
