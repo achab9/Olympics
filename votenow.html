@@ -2,7 +2,7 @@
 <html>
 	<head>
 
-		<link href="site.css" rel="stylesheet">
+		<link href="site.css" rel="stylesheet"> <!-- Connect to stylesheet -->
 
 	</head>
 
@@ -12,72 +12,72 @@
 		<div id="main">
 		<script src = "Styling2.js" > </script>	
 
-		<p id = "comehere"> Join or Login Today! </p>
+		<p id = "comehere"> Join or Login Today! </p> <!-- Title --> 
 
-		<script src = "http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" ></script>
+		<script src = "http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" ></script> <!-- Pulls in Google API -->
 
-		<form id = "myForm" action = " " method = "POST" target = "no-target">
-			<input id = "firstNameInput" placeholder = "First Name" name = "firstName"> <br> <br>
-			<input id = "lastNameInput" placeholder = "Last Name" name = "lastName"> <br> <br>
-			<input id = "usernameInput" placeholder = "Username" name = "username"> <br> <br>
-			<input id = "passwordInput" placeholder = "Password" name = "password"> <br> <br>
-			<button id = "formSubmit" type = "submit" onClick="parent.location='Map.html'"> Join! </button>
+		<form id = "myForm" action = " " method = "POST" target = "no-target"><!--  Form to join  -->
+			<input id = "firstNameInput" placeholder = "First Name" name = "firstName"> <br> <br> <!-- First name for the form  -->
+			<input id = "lastNameInput" placeholder = "Last Name" name = "lastName"> <br> <br> <!-- Last name for the form -->
+			<input id = "usernameInput" placeholder = "Username" name = "username"> <br> <br> <!-- Username for the form -->
+			<input id = "passwordInput" placeholder = "Password" name = "password"> <br> <br> <!-- Password for the form -->
+			<button id = "formSubmit" type = "submit" onClick="parent.location='Map.html'"> Join! </button> <!-- Button to end and submit the form  -->
 		</form> 
 
 		<iframe src'#' id = "no-target" name = "no-target" style = "visibility:hidden"></iframe>
 
 		<script>
-			$('#myForm').on('submit', function() {
+			$('#myForm').on('submit', function() { // Function to submit the answers form to google databawse 
 
-				var baseURL = "https://docs.google.com/forms/d/1Y7zjBLaxmO-BxmjD6eU0rB-NKLSm37IOoAxPXQ-Zpqo/formResponse?";
+				var baseURL = "https://docs.google.com/forms/d/1Y7zjBLaxmO-BxmjD6eU0rB-NKLSm37IOoAxPXQ-Zpqo/formResponse?"; // URL from the form 
 				var submitRef = "&submit=Submit";
-				var theirFirstName = encodeURIComponent($("#firstNameInput").val());
-				var firstNameID = "entry_1208856848";
+				var theirFirstName = encodeURIComponent($("#firstNameInput").val()); 
+				var firstNameID = "entry_1208856848"; // Gets the ID from form for the URL 
 				var theirLastName = encodeURIComponent($("#lastNameInput").val());
-				var lastNameID = "entry_1888367364";
+				var lastNameID = "entry_1888367364"; // Gets the ID from form for the URL
 				var theirUsername = encodeURIComponent($("#usernameInput").val());
-				var usernameID = "entry_1499230911";
+				var usernameID = "entry_1499230911"; // Gets the ID from form for the URL
 				var theirPassword = encodeURIComponent($("#passwordInput").val());
-				var passwordID = "entry_1142592352";
+				var passwordID = "entry_1142592352"; // Gets the ID from form for the URL
 
-				var submitURL = (baseURL + firstNameID + "=" + theirFirstName + "&" + lastNameID + "=" + theirLastName + "&" + usernameID + "=" + theirUsername + "&" + passwordID + "=" + theirPassword + submitRef);
+				var submitURL = (baseURL + firstNameID + "=" + theirFirstName + "&" + lastNameID + "=" + theirLastName + "&" + usernameID + "=" + theirUsername + "&" + passwordID + "=" + theirPassword + submitRef); // Makes the final URL to send to the form
 
 				console.log(submitURL);
 				$(this)[0].action = submitURL;
-				$('#firstNameInput').addClass('active').val("Thank you!");
-				$('#lastNameInput').addClass('active').val("Thank you!");
-				$('#usernameInput').addClass('active').val("Thank you!");
-				$('#passwordInput').addClass('active').val("Thank you!");
+				$('#firstNameInput').addClass('active').val("Thank you!"); // Changes answer to thank you on submit
+				$('#lastNameInput').addClass('active').val("Thank you!"); // Changes answer to thank you on submit
+				$('#usernameInput').addClass('active').val("Thank you!"); // Changes answer to thank you on submit
+				$('#passwordInput').addClass('active').val("Thank you!"); // Changes answer to thank you on submit
 
 			});
 		</script>
 
-		<script src = "http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src = "http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> <!-- Pulls in Google API -->
 
 		<form id = "myForm2" action = "" method = "POST" target = "no-target">
-			<input id = "loginUsernameInput" placeholder = "Username:" name = "loginUsername"> <br> <br>
-			<input id = "loginPasswordInput" placeholder = "Password: " name = "loginPassword"> <br> <br>
-			<button id = "loginSubmit" type = "submit" onClick="parent.location='Map.html'"> Log In! </button>
+			<input id = "loginUsernameInput" placeholder = "Username:" name = "loginUsername"> <br> <br> <!-- Username for the form  -->
+			<input id = "loginPasswordInput" placeholder = "Password: " name = "loginPassword"> <br> <br> <!-- Password for the form  -->
+			<button id = "loginSubmit" type = "submit" onClick="parent.location='Map.html'"> Log In! </button> <!-- Button to end and submit the form  -->
 		</form>
 
-		<iframe src = "#" id = "no-target" name = "no-target" style = "visibility:hidden"></iframe>
+		<iframe src = "#" id = "no-target" name = "no-target" style = "visibility:hidden"></iframe> 
 
 		<script>
 			$('#myForm2').on('submit',function(){
 
-				var baseURL2 = "https://docs.google.com/forms/d/1AZNp2tFJNcHjJbs0prvA9eUTUmwf1Jj7mPJ89sRYK9A/formResponse?";
+				var baseURL2 = "https://docs.google.com/forms/d/1AZNp2tFJNcHjJbs0prvA9eUTUmwf1Jj7mPJ89sRYK9A/formResponse?"; // URL from the form 
 				var submitRef2 = "&submit=Submit";
 				var their_username_login = encodeURIComponent($("#loginUsernameInput").val());
-				var usernameLoginID = "entry_1772733764";
+				var usernameLoginID = "entry_1772733764";	// Gets the ID from form for the URL
 				var their_password_login = encodeURIComponent($("#loginPasswordInput").val());
-				var passwordLoginID = "entry_2140506592";
+				var passwordLoginID = "entry_2140506592";	// Get the ID from form for the URL 
 
-				var submitURL2 = (baseURL2 + usernameLoginID + "=" + their_username_login + "&" + passwordLoginID + "=" + their_password_login + submitRef2);
+				var submitURL2 = (baseURL2 + usernameLoginID + "=" + their_username_login + "&" + passwordLoginID + "=" + their_password_login + submitRef2);		// Makes the final URL to send to the form 
 
 			console.log(submitURL2);
 			$(this)[0].action=submitURL2;
-			$('#loginUsernameInput').addClass('active').val("Thank you!");
-			$('#loginPasswordInput').addClass('active').val("Thank you!");
+			$('#loginUsernameInput').addClass('active').val("Thank you!");		// Changes answer to thank you on submit
+			$('#loginPasswordInput').addClass('active').val("Thank you!");		// Changes answer to thank you on submit
 
 			});
 		</script>

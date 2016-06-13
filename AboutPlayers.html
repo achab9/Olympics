@@ -2,7 +2,7 @@
 <html>
 	<head>
 
-		<link href="site.css" rel="stylesheet">	
+		<link href="site.css" rel="stylesheet">	<!-- Link to stylesheet -->
 		
 
 	</head>
@@ -13,14 +13,12 @@
 		<div id="main">
 		<script src = "Styling2.js" > </script>	
 
-		<p id = "comehere"> Find Previous Winners Here! <p>
-
-			<p> Summer Sports </p>
+		<p id = "comehere"> Find Previous Winners Here! <p> <!-- Title -->
 
 			<div class="dropdown">
-				<button onclick="myFunction()" class="dropbtn">Pick a Sport</button>
+				<button onclick="myFunction()" class="dropbtn">Pick a Sport</button> <!-- Function to call the table when they pick a sport -->
 				<div id="myDropdown" class="dropdown-content">
-					<a href="#" onclick = "volleyball();">Beach Volleyball</a>
+					<a href="#" onclick = "volleyball();">Beach Volleyball</a> <!--  List of sports on dropdown menu -->
 				    <a href="#" onclick = "cycling();">Road Cycling</a>
 				    <a href="#" onclick = "running();">Penthalon</a>
 				    <a href="#" onclick = "swimming();">Diving</a>
@@ -29,8 +27,8 @@
 				</div>
 			</div>
 
-			<div id="div2" style="display:none;" class="answer_list">
-				<table>
+			<div id="div2" style="display:none;" class="answer_list"> <!-- Table for Volleyball -->
+				<table id = "winner">
 				  <tr>
 				    <th id = "year">Year / Place </th>
 				    <th colspan="2" id = "men">Men's Volleyball</th>
@@ -122,8 +120,8 @@
 				</table>
 		 	</div>
 
-		 	<div id="div3" style="display:none;" class="answer_list">
-				<table>
+		 	<div id="div3" style="display:none;" class="answer_list">	<!-- 	Table for Cycling -->
+				<table id = "winner">
 				  <tr>
 				    <th id = "year">Year / Place </th>
 				    <th colspan="2" id = "men">Men's Road Cycling</th>
@@ -215,8 +213,8 @@
 				</table>
 		 	</div>
 
-		 	<div id="div4" style="display:none;" class="answer_list">
-				<table>
+		 	<div id="div4" style="display:none;" class="answer_list">	<!-- 	Table for Pentathalon -->
+				<table id = "winner">
 				  <tr>
 				    <th id = "year">Year / Place </th>
 				    <th colspan="2" id = "men">Men's Pentathalon</th>
@@ -308,8 +306,8 @@
 				</table>
 		 	</div>
 
-		 	<div id="div5" style="display:none;" class="answer_list">
-				<table>
+		 	<div id="div5" style="display:none;" class="answer_list">			<!-- Table for Diving -->
+				<table id = "winner">
 				  <tr>
 				    <th id = "year">Year / Place </th>
 				    <th colspan="2" id = "men">Men's Diving</th>
@@ -401,8 +399,8 @@
 				</table>
 		 	</div>
 
-		 	<div id="div6" style="display:none;" class="answer_list">
-				<table>
+		 	<div id="div6" style="display:none;" class="answer_list"> 				<!-- Table for Tennis -->
+				<table id = "winner">
 				  <tr>
 				    <th id = "year">Year / Place </th>
 				    <th colspan="2" id = "men">Men's Tennis</th>
@@ -494,8 +492,8 @@
 				</table>
 		 	</div>
 
-		 	<div id="div7" style="display:none;" class="answer_list">
-				<table>
+		 	<div id="div7" style="display:none;" class="answer_list">			<!-- Table for Water Polo -->
+				<table id = "winner">
 				  <tr>
 				    <th id = "year">Year / Place </th>
 				    <th colspan="2" id = "men">Men's Water Polo</th>
@@ -589,11 +587,11 @@
 
 		<script>
 
-			function myFunction() {
-			    document.getElementById("myDropdown").classList.toggle("show");
+			function myFunction() {				// Function for dropdown 
+			    document.getElementById("myDropdown").classList.toggle("show"); // Shows the dropdown menu
 			}
 
-			window.onclick = function(event) {
+			window.onclick = function(event) { // Function to show the dropdown 
 			  if (!event.target.matches('.dropbtn')) {
 
 			    var dropdowns = document.getElementsByClassName("dropdown-content");
@@ -607,7 +605,7 @@
 			  }
 			}
 
-			function volleyball() {
+			function volleyball() { 	// Function to show the right table (volleyball)
 			   document.getElementById('div2').style.display = "block";
 			   document.getElementById('div3').style.display = "none";
 			   document.getElementById('div4').style.display = "none";
@@ -616,7 +614,7 @@
 			   document.getElementById('div7').style.display = "none";
 			}
 
-			function cycling() {
+			function cycling() {		// Function to show the right table (cycling)
 				document.getElementById('div2').style.display = "none";
 				document.getElementById('div3').style.display = "block";
 				document.getElementById('div4').style.display = "none";
@@ -625,7 +623,7 @@
 				document.getElementById('div7').style.display = "none";
 			}
 
-			function running() {
+			function running() {		//  Function to show the right table (running)
 				document.getElementById('div2').style.display = "none";
 				document.getElementById('div3').style.display = "none";
 				document.getElementById('div4').style.display = "block";
@@ -634,7 +632,7 @@
 				document.getElementById('div7').style.display = "none";
 			}
 
-			function swimming() {
+			function swimming() {		// Function to show the right table (swimming)
 				document.getElementById('div2').style.display = "none";
 				document.getElementById('div3').style.display = "none";
 				document.getElementById('div4').style.display = "none";
@@ -643,7 +641,7 @@
 				document.getElementById('div7').style.display = "none";
 			}
 
-			function tennis() {
+			function tennis() {			// Function to show the right table (tennis)
 				document.getElementById('div2').style.display = "none";
 				document.getElementById('div3').style.display = "none";
 				document.getElementById('div4').style.display = "none";
@@ -652,7 +650,7 @@
 				document.getElementById('div7').style.display = "none";
 			}
 
-			function polo() {
+			function polo() {			//  Function to show the right table (polo)
 				document.getElementById('div2').style.display = "none";
 				document.getElementById('div3').style.display = "none";
 				document.getElementById('div4').style.display = "none";

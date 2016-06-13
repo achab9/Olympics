@@ -7,7 +7,185 @@
 #comehere {
     text-align: center;
     font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+    font-size: 49px;#body {     /*Repeating Olympic symbol around the top*/
+    background-image: url("http://commonwealthmagazine.org/wp-content/uploads/sites/2/2015/02/olympic-rings-on-white.jpg"); 
+    background-repeat:repeat-x;
+    background-size: 10%;
+}           
+
+#comehere {    /* Title on each page */
+    text-align: center;
+    font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
     font-size: 49px;
+    font-style: normal;
+    font-variant: small-caps;
+    font-weight: bold;
+    line-height: 53.9px;
+}
+
+.dropbtn {      /*Dropdown button*/
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {       /* Dropdown button when you hover over it */
+    background-color: #3e8e41;
+}
+
+.dropdown {            /* Dropdown button*/
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {        /* Formatting for words on dropdown menu*/
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {         /*  Dropdown content*/
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}      /* When you hover over dropwdown stuff*/
+
+.show {display:block;}     /* When you click the dropdown */
+
+#volleyball {           /*volleyball table*/
+    border-collapse: separate;
+    width: 100%;
+}
+
+#winner{               /* table formatting for winners table */
+    width: 100%;
+    table-layout: fixed;
+    background-color: white;
+    border: 1px solid black;
+    border-collapse: separate;
+}
+th {                  /*  formatting for headers in winner table */
+    height: 50px;
+    border: 1px solid black;
+    border-collapse: separate;
+}
+
+td{                /* formatting for column in winner table */
+    padding: 10px;
+    text-align: left;
+    border: 1px solid black;
+    border-collapse: separate;
+}
+
+tr {                    /*formatting for row in winner table */
+    width: 100%;
+}
+
+#Gold:hover {           /*hovering over the gold rows in winner table */
+    background-color: #F0C457;
+}
+
+#Silver:hover {             /*hovering over the silver rows in winner table */
+    background-color: #DDDDDE;
+}
+
+#Bronze:hover {            /* hovering over the bronze rows in winner table */
+    background-color: #F0A24F;
+}
+
+#year {                        /* gradient in title of winners tables*/
+    background: linear-gradient(to right, red , yellow);
+}
+
+#men {                 /* gradient in table of winners tables */
+    background: linear-gradient(to right, yellow , green);
+}
+
+#women {                /*gradient in table of winners table */
+    background: linear-gradient(to right, green , blue, black);
+}
+
+ul#menu {              /* buttons for each page */
+    padding: 0;
+    margin-bottom: 11px;
+    padding-top: 100px;
+}
+
+ul#menu li {            /* buttons for each page */
+    display: inline;
+    margin-right: 3px;
+}
+
+ul#menu li a {              /* buttons for each page */
+    background-color: #0085C8;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #696969;
+    border-radius: 4px 4px 0 0;
+    border-color: black;
+    border-style: solid;
+    font-color: #ffffff;
+    border-width: 1px;
+}
+
+ul#menu li a:hover {            /* hovering buttons for each page */
+    color: white;
+    background-color: #F3C301;
+}
+
+#connect {                /*  table for connecting to other Olympic pages */
+    float:right;
+    width: 50%;
+    padding-right: 50px;
+}
+
+#nbc {             /* formatting for nbc logo*/
+    width: 53px;
+    height: 35px;
+}
+
+#olymp {            /* formatting for olympic logo*/
+    width: 75px;
+    height: 35px;
+}
+    
+#fb {               /* formatting for facebook logo*/
+    width: 35px;
+    height: 35px;
+}
+    
+#tweet {                /* formatting for twitter logo*/
+    width: 43px;
+    height: 35px;
+}
+
+#insta {                /* formatting for instagram logo*/
+    width: 35px;
+    height: 35px;
+}
+
+#snap {                 /* formatting for snapchat logo*/
+    width: 35px;
+    height: 35px;
+}
+
+#plus {                 /* formatting for google plus logo*/
+    width: 36px;
+    height: 35px;
+}
+
+#youtube {              /* formatting for youtube logo*/
+    width: 50px;
+    height: 35px;
+}
     font-style: normal;
     font-variant: small-caps;
     font-weight: bold;
